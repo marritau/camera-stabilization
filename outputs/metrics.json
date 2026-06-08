@@ -1,0 +1,24 @@
+{
+  "variant": "B",
+  "video": "data/demo_motion.mp4",
+  "frames_processed": 140,
+  "lucas_kanade": {
+    "initial_points": 200,
+    "final_points": 188,
+    "lost_percent": 6.0,
+    "mean_track_length": 133.63,
+    "median_track_length": 140.0
+  },
+  "farneback": {
+    "mean_flow_magnitude": 0.402,
+    "max_mean_flow_magnitude": 0.912,
+    "mean_motion_mask_ratio": 0.0841,
+    "mean_motion_components": 16.12
+  },
+  "interpretation": {
+    "lk_strength": "Tracks stable textured corners and gives clean sparse trajectories.",
+    "lk_weakness": "Loses points on blur, low texture, object exits, and strong deformation.",
+    "farneback_strength": "Produces dense motion everywhere and helps build motion masks.",
+    "farneback_weakness": "Adds noisy flow on shadows, global camera drift, blur, and flat background."
+  }
+}
